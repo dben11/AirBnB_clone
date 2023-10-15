@@ -11,10 +11,10 @@ from models.base_model import BaseModel
 
 class TestAmenity(unittest.TestCase):
     """Test for amenities"""
-    
     def test_name(self):
         """Tests for name input"""
         pass
 
-if __name__ = '__main__':
+
+if __name__ == '__main__':
     unittest.main()
