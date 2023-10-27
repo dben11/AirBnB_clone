@@ -2,10 +2,10 @@
 """Holds class city"""
 
 import models
-from models.base_model import BaseModel, Base
+from models.base_model import BaseModel
 
 
-class City(BaseModel, Base):
+class City(BaseModel):
     """Representation of city"""
     state_id = ""
     name = ""

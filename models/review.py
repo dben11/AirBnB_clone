@@ -2,10 +2,10 @@
 """Holds class Review"""
 
 import models
-from models.base_model import BaseModel, Base
+from models.base_model import BaseModel
 
 
-class Review(BaseModel, Base):
+class Review(BaseModel):
     """Representation of review"""
     place_id = ""
     uuser_id = ""

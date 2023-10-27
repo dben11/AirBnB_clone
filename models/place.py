@@ -2,10 +2,10 @@
 """Holds class Place"""
 
 import models
-from models.base_model import BaseModel, Base
+from models.base_model import BaseModel
 
 
-class Place(BaseModel, Base):
+class Place(BaseModel):
     """Representation of place"""
     city_id = ""
     user_id = ""

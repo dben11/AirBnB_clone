@@ -2,10 +2,10 @@
 """Holds class User"""
 
 import models
-from models.base_model import BaseModel, Base
+from models.base_model import BaseModel
 
 
-class User(BaseModel, Base):
+class User(BaseModel):
     """Representation of place"""
     email = ""
     password = ""
