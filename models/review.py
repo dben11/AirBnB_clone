@@ -1,11 +1,16 @@
 #!/usr/bin/python3
-"""Holds class Amenity"""
+"""Holds class Review"""
 
-
-import uuid
-from datetime import datetime
 import models
+from models.base_model import BaseModel, Base
 
 
-class Amenity():
-    pass
+class Review(BaseModel, Base):
+    """Representation of review"""
+    place_id = ""
+    uuser_id = ""
+    text = ""
+
+    def __init__(self, *args, **kwargs):
+        """Initialize city"""
+        super().__init__(*args, **kwargs)
