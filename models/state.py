@@ -2,11 +2,11 @@
 """Holds class State"""
 
 
-from models.base_model import BaseModel, Base
+from models.base_model import BaseModel
 import models
 
 
-class State(BaseModel, Base):
+class State(BaseModel):
     """Representation of state """
     name = ""
 
