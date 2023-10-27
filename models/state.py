@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-"""Holds class Amenity"""
+"""Holds class State"""
 
 
-import uuid
-from datetime import datetime
+from models.base_model import BaseModel, Base
 import models
 
 
-class Amenity():
-    pass
+class State(BaseModel, Base):
+    """Representation of state """
+    name = ""
+
+    def __init__(self, *args, **kwargs):
+        """initializes state"""
+        super().__init__(*args, **kwargs)

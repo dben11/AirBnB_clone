@@ -1,11 +1,17 @@
 #!/usr/bin/python3
-"""Holds class Amenity"""
+"""Holds class User"""
 
-
-import uuid
-from datetime import datetime
 import models
+from models.base_model import BaseModel, Base
 
 
-class Amenity():
-    pass
+class User(BaseModel, Base):
+    """Representation of place"""
+    email = ""
+    password = ""
+    first_name = ""
+    last_naame = ""
+
+    def __init__(self, *args, **kwargs):
+        """Initialize user"""
+        super().__init__(*args, **kwargs)
