@@ -39,7 +39,7 @@ class BaseModel:
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.utcnow()
-            self.update_at = datetime.utcnow()
+            self.update_at = self.created_at
 
     def __str__(self):
         """String representation of the output in dict format"""
