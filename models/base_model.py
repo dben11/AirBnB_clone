@@ -50,7 +50,7 @@ class BaseModel:
     def save(self):
         """Updates the public instance attr updated_at"""
 
-        self.updated_at = datetime.utcnow()
+        """self.updated_at = datetime.utcnow()"""
         models.storage.new(self)
         models.storage.save()
 
