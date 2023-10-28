@@ -50,7 +50,7 @@ class FileStorage:
                 json_obj[key].decode()
             json_obj[key] = self.__objects[key].to_dict(save_fs=1)
         with open(self.__file_path, 'w') as obj_file:
-            json.dump(json_obj, obj_file)
+            json.dump(json_obj, obj_file, default=str)
 
     def reload(self):
         """Deserializes the JSON file to_objects"""
