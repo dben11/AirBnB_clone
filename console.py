@@ -14,11 +14,15 @@ class HBNBCommand(cmd.Cmd):
 
     valid_classes = ["BaseModel"]
 
-    def do_quit(self, line):
+    def emptyline(self):
+        """Do nothng upon receiving an empty line."""
+        pass
+
+    def do_quit(self, arg):
         """Quit command to exit the program"""
         return True
 
-    def do_EOF(self, line):
+    def do_EOF(self, arg):
         """Exit command to end the cmdloop"""
         return True
 
